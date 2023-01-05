@@ -93,6 +93,7 @@ ActivitySmithBinding binding;
                                         // Do something with the image
                                         imageUris.add(imageUri);
 //                                        binding.imageView.setImageURI(imageUri);
+                                        Toast.makeText(context, "you Selected "+imageUris.size()+"photo", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             } else {

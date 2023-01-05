@@ -36,10 +36,10 @@ public class PendingAdapterRecycler extends RecyclerView.Adapter<PendingAdapterR
     @Override
     public void onBindViewHolder(@NonNull PendingViweHolder holder, int position) {
         int pos = position;
-        PendingClass pendingClass = arrayListPending.get(position);
-        holder.OrderNum.setText(pendingClass.getOrderNum()+"");
+        PendingClass pendingClass = arrayListPending.get(pos);
+        holder.OrderNum.setText(pendingClass.getOrderNum()+"OrderNum:");
         holder.serviceType.setText(pendingClass.getServiceType()+"");
-        holder.dateTv.setText(pendingClass.getOrderDateShow()+"");
+        holder.dateTv.setText(pendingClass.getOrderDateShow()+"Date:");
 //        holder.dateTv.setText();
 
 

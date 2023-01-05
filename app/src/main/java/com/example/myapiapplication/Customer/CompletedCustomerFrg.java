@@ -120,6 +120,7 @@ public class CompletedCustomerFrg extends Fragment {
 
         queue = Volley.newRequestQueue(context1);
 
+        ReadAllData();
         sharedPreferences=getActivity().getSharedPreferences(Constant.fileName,MODE_PRIVATE);
      String orderId    =  sharedPreferences.getString("ORDER_ID","1");
      String orderDate    =  sharedPreferences.getString("ORDER_DATE","1");

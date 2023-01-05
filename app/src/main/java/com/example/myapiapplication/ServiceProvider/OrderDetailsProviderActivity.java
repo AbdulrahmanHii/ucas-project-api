@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.myapiapplication.Adapters.Constant;
 import com.example.myapiapplication.Customer.CusSelectServiceFragment;
 import com.example.myapiapplication.ViewBagerProviderActivity;
@@ -57,7 +58,7 @@ ActivityOrderDetailsProviderBinding binding;
         SharedPreferences sp= getSharedPreferences(Constant.saveAllWorkProvider, MODE_PRIVATE);
         String nameProvider= sp.getString("nameCustomer","");
         String date= sp.getString("date","");
-        String photoOrder= sp.getString("photoOrder","");
+        String photoOrder= sp.getString("photoOrder","No Image");
         String serviceType= sp.getString("serviceType","");
         String phone= sp.getString("phone","0594445556");
          orderId= sp.getString("orderId","1");
@@ -72,10 +73,12 @@ ActivityOrderDetailsProviderBinding binding;
 
         binding.userNameProvider.setText(nameProvider);
         binding.dateTv.setText(date);
-        binding.imageViewWork.setImageDrawable(Drawable.createFromPath(photoOrder));
         binding.nameWorkTv.setText(serviceType);
         binding.phoneTv.setText(phone);
         binding.locationTv.setText("GAZA");
+        Glide.with(context)
+                .load(photoOrder)
+                .into(binding.imageViewWork);
 
 
         binding.orderNowBtn.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +88,14 @@ ActivityOrderDetailsProviderBinding binding;
 //                startActivity(intent);
 
                 sendDataToSever( orderId);
+            }
+        });
+        binding.imageViewBackSmithA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, ViewBagerProviderActivity.class);
+                startActivity(intent);
+
             }
         });
 
@@ -103,14 +114,15 @@ ActivityOrderDetailsProviderBinding binding;
                 public void onResponse(JSONObject response) {
 
                     try {
+                        Toast.makeText(context, response.getString("message"), Toast.LENGTH_SHORT).show();
+
                         if (response.getBoolean("success")){
-                            Intent intent=new Intent(context, CusSelectServiceFragment.class);
+                            Intent intent=new Intent(context, ViewBagerProviderActivity.class);
                             startActivity(intent);
 
                         }
 
 
-                        Toast.makeText(context, response.getString("message"), Toast.LENGTH_SHORT).show();
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -120,7 +132,8 @@ ActivityOrderDetailsProviderBinding binding;
                 @Override
                 public void onErrorResponse(VolleyError error) {
 
-                    Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "error"+error.getMessage(), Toast.LENGTH_SHORT).show();
+
 
                 }
             })

@@ -49,7 +49,7 @@ public class PendingCusFragment extends Fragment {
     ArrayList<PendingClass> arrayListPending = new ArrayList<>();
     String OrderNum;
     String serviceType;
-    Context context1;
+
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -91,9 +91,11 @@ public class PendingCusFragment extends Fragment {
         binding = FragmentPendingCusBinding.inflate(inflater, container, false);
 
 
-        queue = Volley.newRequestQueue(context1);
+        queue = Volley.newRequestQueue(getActivity());
 
         sharedPreferences=getActivity().getSharedPreferences(Constant.fileName,MODE_PRIVATE);
+        readAllData();
+
         String orderId    =  sharedPreferences.getString("ORDER_ID","1");
         String orderDate    =  sharedPreferences.getString("ORDER_DATE","1");
         String orderWorkName    =  sharedPreferences.getString("ORDER_WORK_NAME","1");
@@ -112,7 +114,7 @@ public class PendingCusFragment extends Fragment {
         return binding.getRoot();
     }
 
-    void ReadAllData() {
+    void readAllData() {
 
         StringRequest requestGetData = new StringRequest(GET, "https://studentucas.awamr.com/api/order/pending/user", new Response.Listener<String>() {
             @Override
@@ -153,7 +155,7 @@ public class PendingCusFragment extends Fragment {
             public Map<String, String> getHeaders() throws AuthFailureError {
 
                 if (sharedPreferences!=null){
-                    tokenCus =   sharedPreferences.getString(Constant.CUSTOMER_CONSTANT_TOKEN,"no");
+                    tokenCus =  sharedPreferences.getString(Constant.CUSTOMER_CONSTANT_TOKEN,"no");
                 }
                 Map<String,String> map = new HashMap<String,String>();
                 map.put("Authorization","Bearer "+tokenCus);

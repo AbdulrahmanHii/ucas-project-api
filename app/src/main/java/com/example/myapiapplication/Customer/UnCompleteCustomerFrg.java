@@ -113,9 +113,9 @@ public class UnCompleteCustomerFrg extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentPendingCusBinding.inflate(inflater, container, false);
-
-
         queue = Volley.newRequestQueue(context1);
+
+        ReadAllData();
 
         sharedPreferences=getActivity().getSharedPreferences(Constant.fileName,MODE_PRIVATE);
      String orderId    =  sharedPreferences.getString("ORDER_ID","1");

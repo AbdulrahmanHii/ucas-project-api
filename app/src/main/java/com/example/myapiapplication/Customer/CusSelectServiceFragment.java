@@ -58,17 +58,17 @@ public class CusSelectServiceFragment extends Fragment  {
     String nameJop;
     int idJops;
     String icon;
-    Context context1;
+//    Context context1;
 
 
 
 
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-        context1 = context;
-    }
+//
+//    @Override
+//    public void onAttach(@NonNull Context context) {
+//        super.onAttach(context);
+//        context1 = context;
+//    }
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -112,7 +112,7 @@ public class CusSelectServiceFragment extends Fragment  {
         binding = FragmentCusSelectServiceBinding.inflate(inflater, container, false);
 
 
-        queue = Volley.newRequestQueue(context1);
+        queue = Volley.newRequestQueue(getActivity());
 
         ReadAllData();
 
@@ -128,7 +128,7 @@ public class CusSelectServiceFragment extends Fragment  {
                     JSONObject jsonObject = new JSONObject(response);
                     JSONArray jArray = jsonObject.getJSONArray("data");
 //                    binding.progress.setVisibility(View.GONE);
-                    Toast.makeText(context1, ""+jsonObject.getString("success"), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), ""+jsonObject.getString("success"), Toast.LENGTH_SHORT).show();
 
                     JSONObject jObject;
                     for (int i = 0; i < jArray.length(); i++) {
@@ -145,7 +145,7 @@ public class CusSelectServiceFragment extends Fragment  {
                             @Override
                             public void selectedListener(int position) {
                               int id =  arrayList.get(position).getIdService();
-                              Intent intent=new Intent(context1, SmithActivity.class);
+                              Intent intent=new Intent(getActivity(), SmithActivity.class);
                               intent.putExtra("id_Word",id);
                               startActivity(intent);
 
@@ -171,7 +171,7 @@ public class CusSelectServiceFragment extends Fragment  {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(context1, ""+error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), ""+error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
         queue.add(requestGetData);

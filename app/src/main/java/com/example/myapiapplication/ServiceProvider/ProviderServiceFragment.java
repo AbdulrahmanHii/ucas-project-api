@@ -171,7 +171,8 @@ FragmentProviderServiceBinding binding;
                                     SharedPreferences.Editor editor = sp.edit();
                                     editor.putString("nameCustomer",servicesProviderArrayList.get(position).getNameCustomer());
                                     editor.putString("date",servicesProviderArrayList.get(position).getDate());
-                                    editor.putString("photoOrder", String.valueOf(servicesProviderArrayList.get(position).getPhoto()));
+
+                                    editor.putString("photoOrder",  servicesProviderArrayList.get(position).getPhoto());
                                     editor.putString("serviceType",serviceType);
                                     editor.putString("orderId",orderId);
 
