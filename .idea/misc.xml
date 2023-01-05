@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_location.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_order_details_provider.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_orderdone.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_regester_use.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_smith.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/activity_view_bager_provider.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/cus_activity_service_bager_view.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_bagger_provider_details.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_cus_select_service.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_customer_register.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_orders_cus_bager.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_pending_cus.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_pending_provider.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_provider_service.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/fragment_service_provider_register.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/item_adapter_customer.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/layout/item_select_service_cus.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/api__/app/src/main/res/menu/menu.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable-v24/backgroundshape2Blue.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable-v24/backgroundshape2_blue.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable-v24/backgroundshape2blue.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable-v24/input_big_shape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/background_blue_shap.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/backgroundshape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/button_shape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/ground_shape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/ic__eye_24.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/ic_drop_down_24.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/ic_go_24.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/icback_24.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/input2_shape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/drawable/input_shape.xml" value="0.1" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_1.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_2.xml" value="0.18020833333333333" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_3.xml" value="0.18020833333333333" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_filter_provider.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_home.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_location.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_order_details_provider.xml" value="0.18020833333333333" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_orderdone.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_regester_use.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_select_service.xml" value="0.25" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_service_bager_view.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_smith.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/activity_view_bager_provider.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/cus_activity_service_bager_view.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_bagger_provider_details.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_cus_orders.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_cus_select_service.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_customer.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_customer_register.xml" value="0.18020833333333333" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_orders_cus_bager.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_pending_cus.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_pending_provider.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_provider_service.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_select_service.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_service_provider.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/fragment_service_provider_register.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/item_adapter_customer.xml" value="0.22" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/item_select_service_cus.xml" value="0.2" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/item_work_provider.xml" value="0.22" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/login_fragment_customer.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/login_fragment_service_provider.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/layout/screen_splash.xml" value="0.19427083333333334" />
+        <entry key="..\:/Android Studio Projects/app/src/main/res/menu/menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

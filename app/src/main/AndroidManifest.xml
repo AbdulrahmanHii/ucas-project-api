@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapiapplication">
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/home_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/button_shape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyAPIApplication"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmvvOWL_7Pmg-rIAbg_1HI51oPsZYy4Z8" />
+
+
+        <activity
+            android:name=".ServiceProvider.OrderDetailsProviderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceProvider.FilterProviderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewBagerProviderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.OrderDoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.SmithActivity"
+            android:exported="false" />
+<!--                <activity-->
+<!--                    android:name=".ServiceProvider.ProviderServiceFragment"-->
+<!--                    android:exported="false"-->
+<!--                    tools:ignore="Instantiatable" />-->
+        <activity
+            android:name=".ViewBagerServiceActivityCus"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterUseActivity"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity3"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity1"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false">
+
+
+        </activity>
+    </application>
+
+</manifest>
